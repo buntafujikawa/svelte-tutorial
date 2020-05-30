@@ -4,6 +4,8 @@
 	import Introduction from './Introduction.svelte';
 	import Reactivity from './Reactivity.svelte';
 	import Props from './Props.svelte';
+	import Logic from './Logic.svelte';
+	import Lifecycle from './Lifecycle.svelte';
 
 	const pkg = {
 	  price: 100,
@@ -18,6 +20,8 @@
 	<Introduction/>
 	<Reactivity/>
 	<Props answer="hoge" {...pkg}/>
+	<Logic/>
+	<Lifecycle/>
 </main>
 
 <style>
