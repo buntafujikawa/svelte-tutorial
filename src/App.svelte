@@ -1,10 +1,23 @@
 <script>
+    // define in main.js
 	export let name;
+	import Introduction from './Introduction.svelte';
+	import Reactivity from './Reactivity.svelte';
+	import Props from './Props.svelte';
+
+	const pkg = {
+	  price: 100,
+	  amount: 10
+	}
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
 	<p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+
+	<Introduction/>
+	<Reactivity/>
+	<Props answer="hoge" {...pkg}/>
 </main>
 
 <style>
